@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './add_place.screen.dart';
+
 class PlacesListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,7 +11,7 @@ class PlacesListScreen extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
-            onPressed: () {},
+            onPressed: () => onPlacesAdd(context),
           )
         ],
       ),
@@ -17,5 +19,9 @@ class PlacesListScreen extends StatelessWidget {
         child: CircularProgressIndicator(),
       ),
     );
+  }
+
+  void onPlacesAdd(BuildContext context) {
+    Navigator.of(context).pushNamed(AddPlaceScreen.routeName);
   }
 }
