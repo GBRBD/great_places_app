@@ -1,9 +1,8 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:great_places_app/providers/great_places.provider.dart';
 import 'package:provider/provider.dart';
 
+import '../providers/great_places.provider.dart';
 import '../widgets/image_input.dart';
 
 class AddPlaceScreen extends StatefulWidget {
