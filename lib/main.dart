@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
         ),
         home: PlacesListScreen(),
         routes: {
-          // todo: implement more routes
           AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
         },
       ),
