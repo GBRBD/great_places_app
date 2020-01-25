@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:great_places_app/helpers/location.helper.dart';
-import 'package:great_places_app/screens/map.screen.dart';
 import 'package:location/location.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import '../helpers/location.helper.dart';
+import '../screens/map.screen.dart';
 
 class LocationInput extends StatefulWidget {
   @override
@@ -34,8 +35,9 @@ class _LocationInputState extends State<LocationInput> {
     if (selectedLocation == null) {
       return;
     }
+    
   }
-
+S
   @override
   Widget build(BuildContext context) {
     return Column(
